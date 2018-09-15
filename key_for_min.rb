@@ -5,8 +5,8 @@ def key_for_min_value(name_hash)
   if block_given?
     low_value = -1
     low_key = ""
+          binding.pry
     name_hash.each do |key, value|
-      binding.pry
         if low_value == -1
           low_value = value
           low_key = key
